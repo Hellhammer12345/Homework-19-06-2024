@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="randomCity">Random City: </h1>
+    <button id="generateButton">Generate Random City</button>
+
+   <script>
+
+
+function getRandomElement(array) {
+
+return array [Math.floor(Math.random()*array.length)];
+    
+}
+
+ 
+let city = ["Vancouver", "Amsterdam", "São Paulo", "Buenos Aires", "Sydney", "Melbourne", "Auckland", "Wellington", "Johannesburg", "Tokyo"];
+
+
+
+
+document.getElementById("generateButton").addEventListener("click", function () {
+
+const randomCity = getRandomElement(city);
+    
+document.getElementById("randomCity").textContent = "Random City:" + randomCity;
+})
+
+
+   </script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
